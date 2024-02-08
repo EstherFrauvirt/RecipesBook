@@ -1,0 +1,31 @@
+h3,p {
+    margin: 0;
+}
+
+.recipe-card {
+    display: flex;
+    border: solid #b8b4b4 1px;
+    border-radius: 2px;
+    width: 300px;
+    justify-content: space-between;
+    padding: 0 2% 0 2%;
+    align-items: center;
+    text-decoration: none;
+    padding: 17px;
+}
+
+.recipe-card:hover {
+    background-color: #ebebeb;
+}
+
+.recipe_n_d {
+    flex-direction: column;
+    color: black;
+    text-decoration: none;
+}
+.active{
+    border: solid 2px #794cff;
+}
+a{
+    margin-bottom: 10px;
+}

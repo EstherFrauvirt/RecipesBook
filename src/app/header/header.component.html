@@ -1,0 +1,31 @@
+<div class="nav">
+    <div class="header">
+        <div class="logo">
+            <a routerLink="/">Recipe Book</a>
+        </div>
+        <div class="links">
+            <ul class="">
+                <li class="li-link"><a style="cursor: pointer;" class="link" routerLinkActive="active" routerLink="/recipes">Recipes</a></li>
+                <li class="li-link"><a style="cursor: pointer;" class="link" routerLinkActive="active" routerLink="/shopping-list" >Shopping List</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            
+            <div>
+                <div class="dropdown" (click)="toggleDropDown()">
+                    <button class="btn-dropdown btn dropdown-toggle" type="button"  aria-expanded="false" [class.show]="!isShow">
+                      Manage Recipe
+                    </button>
+                    <ul class="dropdown-menu" [class.show]="isShow">
+                      <li><a style="cursor: pointer;" class="dropdown-item"  
+                        >To Shopping List</a></li>
+                      <li><a class="dropdown-item" style="cursor: pointer;"
+                        >Edit Recipe</a></li>
+                      <li><a class="dropdown-item" style="cursor: pointer;">Delete Recipe</a></li>
+                    </ul>
+                  </div>
+                  
+            </div> 
+        </div>        
+    </div>
+</div>

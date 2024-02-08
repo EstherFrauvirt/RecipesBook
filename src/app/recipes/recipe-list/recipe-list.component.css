@@ -1,0 +1,23 @@
+
+
+.row {
+    display: flex;
+}
+
+
+.btn {
+    border: none;
+    color: white;
+    padding: 15px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+
+}
+
+.btn-success {
+    background-color: #794cff;
+    /* Green */
+}

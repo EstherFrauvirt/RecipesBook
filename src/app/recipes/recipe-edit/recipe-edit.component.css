@@ -1,0 +1,71 @@
+/* app.component.css */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  *{
+    margin-top: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    /* margin-bottom: 10px; */
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  .big{
+    min-width: 400px;
+  }
+  .ingredient-row {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 10px; */
+  }
+  
+  .ingredient-row input,
+  .ingredient-row button {
+    margin-right: 10px;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  /* button[type="button"] {
+    background-color: #ff0000;
+    color:white;
+  } */
+  .add{
+    background-color: #794cff !important;
+
+  }
+  input.ng-invalid.ng-touched,textarea.ng-invalid.ng-touched{
+    border:1px solid red
+  }
+  img{
+    width: 100px;
+  }
+  
+ .box{
+  border:1px solid black;
+  padding: 40px;
+  min-width: 350px;
+  margin-left: 50px;
+ }

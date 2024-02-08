@@ -1,0 +1,20 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.col-md-5 {
+ 
+}
+
+.col-md-7 {
+    
+}
+.router-outlet{
+
+}
+@media (max-width: 768px) {
+    .col-md-5,
+    .col-md-7 {
+        flex: 0 0 100%;
+    }
+}

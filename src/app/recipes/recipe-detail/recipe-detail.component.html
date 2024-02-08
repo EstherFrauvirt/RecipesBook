@@ -1,0 +1,40 @@
+<div class="box">
+    <div class="row">
+        <div>
+            <img [src]="recipe.imagePath" alt="{{recipe.name}}" style="width: 100px;">
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <h1>{{recipe.name}}</h1>
+        </div>
+    </div>
+    <div class="row">
+        {{recipe.description}}
+    </div>
+    <h4>Ingredients:</h4>
+    <div class="row">
+        
+        <ul>
+            <li class="ingrid" *ngFor="let ing of recipe.ingredients">
+                {{ing.name}} - {{ing.amount}}</li>
+        </ul>
+    </div>
+    <div class="row">
+        <div>
+            <div class="dropdown" (click)="toggleDropDown()">
+                <button class="btn-dropdown btn dropdown-toggle" type="button" aria-expanded="false" [class.show]="!isShow">
+                    Manage Recipe
+                </button>
+                <ul class="dropdown-menu" [class.show]="isShow">
+                    <li><a style="cursor: pointer;" class="dropdown-item" (click)="onAddToShoppingList()">To Shopping
+                            List</a></li>
+                    <li><a class="dropdown-item" style="cursor: pointer;" (click)="onEditRecipe()">Edit Recipe</a></li>
+                    <li><a class="dropdown-item" style="cursor: pointer;" (click)="onDelete()">Delete Recipe</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+   
+</div>

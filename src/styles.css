@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.center{
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 89%;
+    margin: auto;
+}
+.btn {
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 15px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.success{
+    /* background-color: #04aa4c; */
+    background-color: #794cff;
+}
+.danger{
+    background-color: rgb(255, 60, 60);
+}
+.secondary{
+    color: rgb(137, 137, 137);
+    border:solid 1px rgb(137, 137, 137);
+}
